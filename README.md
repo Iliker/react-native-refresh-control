@@ -2,6 +2,10 @@
 
 A pull down to refresh control for react native.
 
+## NOTES
+
+Exactly the same as the original repo except with a PR merged and no submodules. Ugh.
+
 ## Screen Shot
 
 ![Screen Shot](screen-shot.gif)
