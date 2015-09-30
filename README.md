@@ -4,7 +4,7 @@ A pull down to refresh control for react native.
 
 ## NOTES
 
-Exactly the same as the original repo except with a PR merged and no submodules. Ugh.
+Exactly the same as the original repo except with a PR that didn't make it onto npm and no submodules.
 
 ## Screen Shot
 
