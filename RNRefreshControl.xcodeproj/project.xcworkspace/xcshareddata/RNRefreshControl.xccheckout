@@ -7,16 +7,16 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>E012B9D7-9FDC-4199-9F5C-14C5739CB029</string>
 	<key>IDESourceControlProjectName</key>
-	<string>RCTRefreshControl</string>
+	<string>RNRefreshControl</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>0BCE712030F8A42B334E9CFA6081352FDFF54C76</key>
-		<string>https://github.com/Shuangzuan/RCTRefreshControl.git</string>
+		<string>https://github.com/Shuangzuan/RNRefreshControl.git</string>
 		<key>C18D10292567FB7B676BADDDA11BE939E2AEEC91</key>
 		<string>https://github.com/Sephiroth87/ODRefreshControl.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>RCTRefreshControl.xcodeproj</string>
+	<string>RNRefreshControl.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>0BCE712030F8A42B334E9CFA6081352FDFF54C76</key>
@@ -25,7 +25,7 @@
 		<string>../../ODRefreshControl/</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/Shuangzuan/RCTRefreshControl.git</string>
+	<string>https://github.com/Shuangzuan/RNRefreshControl.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
@@ -46,7 +46,7 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>0BCE712030F8A42B334E9CFA6081352FDFF54C76</string>
 			<key>IDESourceControlWCCName</key>
-			<string>RCTRefreshControl</string>
+			<string>RNRefreshControl</string>
 		</dict>
 	</array>
 </dict>

@@ -1,4 +1,4 @@
-# RCTRefreshControl
+# RNRefreshControl
 [![npm version](https://badge.fury.io/js/react-native-refresh-control.svg)](https://badge.fury.io/js/react-native-refresh-control)
 
 A pull down to refresh control for react native. This project use a native-bridging way to implement the Pull-To-Refresh, absolutely **NO** jitter and lagging compared with those package which implemented using Javascript.
@@ -16,17 +16,17 @@ This project added a more user-friendly way to use this package, and I also fix 
 ## Installation
 
 1. Run `npm install react-native-refresh-control --save` in your project directory.
-2. Drag `RCTRefreshControl.xcodeproj` to your project on Xcode.
-3. Click on your main project file (the one that represents the .xcodeproj) select Build Phases and drag `libRCTRefreshControl.a` from the Products folder inside the `RCTRefreshControl.xcodeproj`.
-4. Add `var RCTRefreshControl = require('react-native-refresh-control');` to your code.
+2. Drag `RNRefreshControl.xcodeproj` to your project on Xcode.
+3. Click on your main project file (the one that represents the .xcodeproj) select Build Phases and drag `libRNRefreshControl.a` from the Products folder inside the `RNRefreshControl.xcodeproj`.
+4. Add `var RNRefreshControl = require('react-native-refresh-control');` to your code.
 
 __I will yield the package name once [Shuangzuan](https://github.com/Shuangzuan)requests __.
 
 ## Usage
-It is very easy to use, just use `RCTRefreshControl.ListView` as the `React.ListView`
-or use `RCTRefreshControl.ScrollView` as the `React.ScrollView`
+It is very easy to use, just use `RNRefreshControl.ListView` as the `React.ListView`
+or use `RNRefreshControl.ScrollView` as the `React.ScrollView`
 
-The simple difference between the `ListView` and `ScrollView` in React Native is that you can pass your `onRefresh` event handler into `RCTRefreshControl.ListView` and `RCTRefreshControl.ScrollView`.
+The simple difference between the `ListView` and `ScrollView` in React Native is that you can pass your `onRefresh` event handler into `RNRefreshControl.ListView` and `RNRefreshControl.ScrollView`.
 
 The event handler below stop the refreshing state of the `ListView` in 2 seconds once the user pull down the `ListView` and triggered the refresh.
 
@@ -38,7 +38,7 @@ var onRefreshHandler = (stopRefreshAnimation) => {
 
 And use like this
 ```jsx
-<RCTRefreshControl.ListView
+<RNRefreshControl.ListView
   // another props here
   onRefresh={onRefreshHandler}
 />
@@ -57,7 +57,7 @@ const {
   ListView
 } = React;
 
-import RCTRefreshControl from 'react-refresh-control';
+import RNRefreshControl from 'react-refresh-control';
 
 class MyApp extends React.Component {
   constructor(props) {
@@ -80,23 +80,23 @@ class MyApp extends React.Component {
   render() {
     return (
       <View style={{flex: 1, flexDirection: 'row', borderTopWidth: 20, borderTopColor: 'black'}}>
-        <RCTRefreshControl.ListView
+        <RNRefreshControl.ListView
           dataSource={this.state.dataSource}
           renderRow={this.renderRow.bind(this)}
           onRefresh={this.onRefresh.bind(this)}
           />
-        <RCTRefreshControl.ScrollView
+        <RNRefreshControl.ScrollView
           onRefresh={this.onRefresh.bind(this)}>
           <View style={{backgroundColor: '#05A5D1', height: 200}} />
           <View style={{backgroundColor: '#FDF3E7', height: 200}} />
           <View style={{backgroundColor: '#484848', height: 200}} />
-        </RCTRefreshControl.ScrollView>
+        </RNRefreshControl.ScrollView>
       </View>
     );
   }
 }
 
-React.AppRegistry.registerComponent('RCTRefreshControlDemo', () => RCTRefreshControlDemo);
+React.AppRegistry.registerComponent('RNRefreshControlDemo', () => RNRefreshControlDemo);
 ```
 
 ## License

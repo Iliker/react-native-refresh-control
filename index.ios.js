@@ -10,7 +10,7 @@ const {
   ListView
 } = React;
 
-import RCTRefreshControl from './RCTRefreshControl';
+import RNRefreshControl from './RNRefreshControl';
 
 let randId = () => (Math.random() + 1).toString(36).substring(7);
 
@@ -22,18 +22,18 @@ var style = StyleSheet.create({
   }
 });
 
-let RCTRefreshControlView = {};
+let RNRefreshControlView = {};
 
-class RCTRefreshControlScrollView extends Component {
+class RNRefreshControlScrollView extends Component {
   componentDidMount() {
-    RCTRefreshControl.configure({
+    RNRefreshControl.configure({
       node: this.refs[ELEMENT_ID],
       tintColor: this.props.tintColor,
       activityIndicatorViewColor: this.props.activityIndicatorViewColor
     }, () => {
       if (this.props.onRefresh) {
         this.props.onRefresh(() => {
-          RCTRefreshControl.endRefreshing(this.refs[ELEMENT_ID]);
+          RNRefreshControl.endRefreshing(this.refs[ELEMENT_ID]);
         });
       }
     });
@@ -47,16 +47,16 @@ class RCTRefreshControlScrollView extends Component {
   }
 }
 
-class RCTRefreshControlViewListView extends Component {
+class RNRefreshControlViewListView extends Component {
   componentDidMount() {
-    RCTRefreshControl.configure({
+    RNRefreshControl.configure({
       node: this.refs[ELEMENT_ID],
       tintColor: this.props.tintColor,
       activityIndicatorViewColor: this.props.activityIndicatorViewColor
     }, () => {
       if (this.props.onRefresh) {
         this.props.onRefresh(() => {
-          RCTRefreshControl.endRefreshing(this.refs[ELEMENT_ID]);
+          RNRefreshControl.endRefreshing(this.refs[ELEMENT_ID]);
         });
       }
     });
@@ -67,7 +67,7 @@ class RCTRefreshControlViewListView extends Component {
     );
   }
 }
-RCTRefreshControl.ScrollView = RCTRefreshControlScrollView;
-RCTRefreshControl.ListView = RCTRefreshControlViewListView;
+RNRefreshControl.ScrollView = RNRefreshControlScrollView;
+RNRefreshControl.ListView = RNRefreshControlViewListView;
 
-module.exports = RCTRefreshControl;
+module.exports = RNRefreshControl;

@@ -1,4 +1,4 @@
-#import "RCTRefreshControl.h"
+#import "RNRefreshControl.h"
 
 #import "ODRefreshControl.h"
 
@@ -8,7 +8,7 @@
 #import "RCTUIManager.h"
 #import "RCTEventDispatcher.h"
 
-@implementation RCTRefreshControl
+@implementation RNRefreshControl
 
 #pragma mark -
 
