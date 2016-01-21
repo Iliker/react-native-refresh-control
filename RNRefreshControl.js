@@ -8,7 +8,7 @@ var React = require('react-native');
 var {
   DeviceEventEmitter,
   NativeModules: {
-    RefreshControl,
+    RNRefreshControl,
   },
   processColor
 } = React;
@@ -27,7 +27,7 @@ var subscription = DeviceEventEmitter.addListener(
 );
 // subscription.remove();
 
-var RNRefreshControl = {
+var RefreshControl = {
   configure: function(configs, callback) {
     var nodeHandle = React.findNodeHandle(configs.node);
     var options = {
@@ -35,7 +35,7 @@ var RNRefreshControl = {
       activityIndicatorViewColor: processColor(configs.activityIndicatorViewColor)
     };
 
-    RefreshControl.configure(nodeHandle, options, (error) => {
+    RNRefreshControl.configure(nodeHandle, options, (error) => {
       if (!error) {
         callbacks[nodeHandle] = callback;
       }
@@ -43,8 +43,8 @@ var RNRefreshControl = {
   },
   endRefreshing: function(node) {
     var nodeHandle = React.findNodeHandle(node);
-    RefreshControl.endRefreshing(nodeHandle);
+    RNRefreshControl.endRefreshing(nodeHandle);
   }
 };
 
-module.exports = RNRefreshControl;
+module.exports = RefreshControl;
