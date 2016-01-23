@@ -8,7 +8,7 @@ A pull down to refresh control for react native. This project use a native-bridg
 Exactly the same as the original repo except with a PR that didn't make it onto npm and no submodules.
 
 ## Screen Shot
-This is a **forked** project from [Shuangzuan/RCTRefreshControl](https://github.com/Shuangzuan/RCTRefreshControl).
+This is a **forked** project from [rreusser/RCTRefreshControl/tree/rename](https://github.com/rreusser/RCTRefreshControl/tree/rename).
 This project added a more user-friendly way to use this package, and I also fix some bugs of the original project.
 
 ![react-refreshcontrol](https://cloud.githubusercontent.com/assets/4535844/11009604/9845be08-84ae-11e5-8fe0-1037c057ce05.gif)
@@ -20,7 +20,6 @@ This project added a more user-friendly way to use this package, and I also fix 
 3. Click on your main project file (the one that represents the .xcodeproj) select Build Phases and drag `libRNRefreshControl.a` from the Products folder inside the `RNRefreshControl.xcodeproj`.
 4. Add `var RNRefreshControl = require('react-native-refresh-control');` to your code.
 
-__I will yield the package name once [Shuangzuan](https://github.com/Shuangzuan)requests __.
 
 ## Usage
 It is very easy to use, just use `RNRefreshControl.ListView` as the `React.ListView`
